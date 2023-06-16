@@ -1,0 +1,21 @@
+body {
+    background-color: beige;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ridimensionamento del Contenitore Generale */
+.resize {
+    width: 700px;
+}
+
+/* Contenuto della Section */
+.content {
+    flex: 1;
+}
+
+/* Caratteristiche del testo del Footer */
+.font-footer {
+    font-size: small;
+}
