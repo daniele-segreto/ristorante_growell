@@ -27,7 +27,14 @@ body {
 
 /* Card */
 .card {
-    background-color: beige;
+    /* background-color: beige; */
+    max-width: 90%;
+}
+
+/* Immagine della Card */
+.card-img-top {
+    width: 145px;
+    height: 100px;
 }
 
 /* Font degli h2, cioè i titol che rappresentano le sezioni del menù */
@@ -35,4 +42,22 @@ body {
 h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+}
+
+/* Frecce per il funzionamento del Collapse dell'Accordion (sul Menù) */
+.accordion-button::after {
+    content: '\e072'; /* Icona freccia verso il basso */
+    color: white; /* Cambia il colore dell'icona */
+}
+
+.accordion-button.collapsed::after {
+    content: '\e08e'; /* Icona freccia verso destra */
+    color: white; /* Cambia il colore dell'icona */
+}
+
+/* Sezione centrale della Home */
+.home-section-bg {
+    background-color: white;
+    padding: 35px;
+    border: 1px solid black;
 }
