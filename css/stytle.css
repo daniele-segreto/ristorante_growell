@@ -61,3 +61,25 @@ h3 {
     padding: 35px;
     border: 1px solid black;
 }
+
+/* Form */
+form {
+    background-color: white;
+    padding: 35px 50px;
+    border: 1px solid black;
+}
+
+/* Link Sotto ai Form di Login e Registrazione */
+.link-login-register {
+    text-decoration: none;
+}
+
+/* Icone Social */
+.fa {
+    font-size: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+}
+.fa:hover {
+    color: rgb(206, 69, 69) !important;
+}

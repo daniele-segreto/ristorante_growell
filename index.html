@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME - GROWELL</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/stytle.css">
 </head>
 <body>
@@ -51,51 +55,77 @@
         
         <!-- Section -->
         <section class="content mt-3">
-            <h1>Home</h1>
-
+            <h1 class="text-center">HOME</h1>
+            
             <hr>
-
+            
             <div class="home-section-bg">
                 <h3 class="fs-4">Benvenuti al Ristorante Growell!</h3>
                 <p>Un'esperienza culinaria indimenticabile ti attende al nostro ristorante, dove l'eccellenza culinaria e l'ospitalità si uniscono per creare un ambiente unico e accogliente. Siamo lieti di darti il benvenuto nella nostra casa, dove ogni piatto è realizzato con passione e cura per offrirti un vero e proprio viaggio dei sensi.</p>
-
+                
                 <hr>
-
+                
                 <h3 class="fs-4 mt-4">Il nostro Menu:</h3>
                 <p>Scopri un'ampia selezione di piatti deliziosi, creati con ingredienti freschi e di alta qualità, accuratamente selezionati per garantirti un sapore autentico. Dalle specialità della cucina italiana tradizionale a piatti internazionali con un tocco moderno, il nostro menu soddisferà ogni palato e ogni desiderio culinario. I nostri chef esperti lavorano con maestria per offrirti una fusione perfetta di sapori, presentati in modo artistico per soddisfare anche gli occhi.</p>
-
+                
+                <div class="d-flex justify-content-center mt-2">
+                    <a class="btn btn-success" type="button" href="./menu.html">ACCEDI AL MENU'</a>
+                </div>
+                
                 <hr>
-
+                
                 <h3 class="fs-4 mt-4">Atmosfera accogliente:</h3>
                 <p>Vieni a immergerti nell'atmosfera calda e invitante del nostro ristorante. Il nostro personale cortese e attento ti accoglierà con un sorriso e ti accompagnerà nella tua esperienza gastronomica. Che tu sia in cerca di una cena romantica, di una serata con amici o di un pranzo di lavoro, il nostro ristorante è il luogo ideale per tutte le occasioni. La nostra elegante sala da pranzo offre un ambiente raffinato, mentre il nostro giardino all'aperto ti permette di godere delle belle giornate di sole in un'atmosfera informale e rilassante.</p>
-
+                
+                <!-- VideoSpot Ristorente -->
+                <div class="d-flex justify-content-center mt-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WIYpZxgcnZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
                 <hr>
-
+                
                 <h3 class="fs-4 mt-4">Prenota ora:</h3>
                 <p>Non vediamo l'ora di accoglierti al Ristorante Gusto Divino per farti vivere una straordinaria esperienza culinaria. Prenota ora il tuo tavolo e lasciati coccolare dai nostri sapori autentici e dalla nostra ospitalità sincera. Siamo certi che una volta provato il nostro ristorante, tornerai ancora e ancora per assaporare i nostri piatti deliziosi.</p>
-
+                
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-success" type="button" href="./menu.html">PRENOTA ORA</a>
+                </div>
+                
+                <hr>
+                
                 <p>Vieni a scoprire il Gusto Divino, il posto in cui la passione per il cibo incontra l'eleganza e la gioia di condividere un'esperienza unica.</p>
-
+                
                 <p>Ti aspettiamo con piacere!</p>
-
+                
                 <b><i>Il team del Ristorante Growell!</i></b>
             </div>
-
+            
             <hr>
             
         </section>
-
+        
         <!-- Footer -->
-        <footer class="footer bg-dark mt-3 p-3 font-footer">
+        <footer class="footer bg-dark p-3 font-footer">
             <div class="container text-center">
-                <span class="text-light">Indirizzo: Via esempio, Città, CAP</span><br>
-                <span class="text-light">Telefono: 0123456789</span><br>
-                <span class="text-light">Partita IVA: 123456789</span><br>
+                <!-- Icone Social -->
+                <div>
+                    <a target="_blank" href="https://it-it.facebook.com/" class="fa fa-facebook text-light"></a>
+                    <a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram text-light"></a>
+                </div>
+                <!-- Info -->
+                <div class="d-flex justify-content-center flex-column">
+                    <span class="text-light mt-1">Indirizzo: Via esempio, Città, CAP</span>
+                    <span class="text-light mt-1 ">Telefono: 0123456789</span>
+                    <span class="text-light mt-1 ">Partita IVA: 123456789</span>
+                </div>
             </div>
         </footer>
+
     </div>
     
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
     <script src="./js/script.js"></script>
 </body>
 </html>

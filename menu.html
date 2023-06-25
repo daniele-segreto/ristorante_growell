@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MENU' - GROWELL</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/stytle.css">
 </head>
 <body>
@@ -53,7 +56,7 @@
         
         <!-- Section / Accordion Item -->
         <section class="content mt-3">
-            <h1>Menù</h1>
+            <h1 class="text-center">MENU'</h1>
             
             <hr>
             
@@ -408,16 +411,27 @@
         <hr>
         
         <!-- Footer -->
-        <footer class="footer bg-dark mt-3 p-3 font-footer">
+        <footer class="footer bg-dark p-3 font-footer">
             <div class="container text-center">
-                <span class="text-light">Indirizzo: Via esempio, Città, CAP</span><br>
-                <span class="text-light">Telefono: 0123456789</span><br>
-                <span class="text-light">Partita IVA: 123456789</span><br>
+                <!-- Icone Social -->
+                <div>
+                    <a target="_blank" href="https://it-it.facebook.com/" class="fa fa-facebook text-light"></a>
+                    <a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram text-light"></a>
+                </div>
+                <!-- Info -->
+                <div class="d-flex justify-content-center flex-column">
+                    <span class="text-light mt-1">Indirizzo: Via esempio, Città, CAP</span>
+                    <span class="text-light mt-1 ">Telefono: 0123456789</span>
+                    <span class="text-light mt-1 ">Partita IVA: 123456789</span>
+                </div>
             </div>
         </footer>
+
     </div>
     
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
     <script src="./js/script.js"></script>
 </body>
 </html>

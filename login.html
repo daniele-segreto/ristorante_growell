@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN - GROWELL</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/stytle.css">
 </head>
 <body>
@@ -51,21 +55,50 @@
         
         <!-- Section -->
         <section class="content mt-3">
-            <h1>Login</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ex dolore, quasi ipsum nobis doloribus non, ipsa autem assumenda nesciunt fuga maxime dignissimos, aspernatur possimus neque pariatur porro sint atque vero! Necessitatibus culpa enim eveniet quod incidunt reprehenderit debitis aut similique nam! Eius quia ut nobis, minima beatae eveniet suscipit corporis repellat, cupiditate distinctio consectetur. Sunt nostrum asperiores praesentium dolores architecto ullam fugiat error id dolorem laudantium! Debitis enim facere magni unde earum libero eaque fugit ea alias. Exercitationem debitis eaque suscipit maiores ab illum ratione mollitia fugit similique error! Accusantium vel, numquam, consectetur minus, inventore ipsam reprehenderit voluptatum ea cum modi amet! Non possimus, sequi nihil quo beatae nostrum doloremque soluta numquam saepe, neque eum a autem eligendi tempora tempore pariatur quis dolor impedit ratione! Accusamus eius, alias qui enim aut doloremque excepturi porro iusto, nisi eveniet consequuntur aperiam necessitatibus quasi officiis dignissimos doloribus incidunt autem. Quidem ex impedit rerum, ut reiciendis officiis perferendis quos quo, ab optio necessitatibus! Repellat tenetur minima voluptatibus placeat. Error totam omnis consequuntur ducimus dicta non maiores quam molestias fugit, commodi aut animi! Placeat veritatis consequuntur vel optio consectetur quidem nisi, cum enim, nam ex reiciendis aut voluptatibus laudantium, dolorem assumenda. Velit, dolor eveniet?</p>
+            <h1 class="text-center">LOGIN</h1>
+
+            <hr>
+
+            <!-- Form di Login -->
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="mariorossi@libero.it">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="**********">
+                </div>
+                <button type="submit" class="btn btn-success">ACCEDI</button>
+                <p class="mt-4">Se non sei regitrato <a class="link-login-register" href="./registrati.html">Iscriviti Adesso</a>.</p>
+            </form>
+
+            <hr>
+
         </section>
         
         <!-- Footer -->
-        <footer class="footer bg-dark mt-3 p-3 font-footer">
+        <footer class="footer bg-dark p-3 font-footer">
             <div class="container text-center">
-                <span class="text-light">Indirizzo: Via esempio, Città, CAP</span><br>
-                <span class="text-light">Telefono: 0123456789</span><br>
-                <span class="text-light">Partita IVA: 123456789</span><br>
+                <!-- Icone Social -->
+                <div>
+                    <a target="_blank" href="https://it-it.facebook.com/" class="fa fa-facebook text-light"></a>
+                    <a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram text-light"></a>
+                </div>
+                <!-- Info -->
+                <div class="d-flex justify-content-center flex-column">
+                    <span class="text-light mt-1">Indirizzo: Via esempio, Città, CAP</span>
+                    <span class="text-light mt-1 ">Telefono: 0123456789</span>
+                    <span class="text-light mt-1 ">Partita IVA: 123456789</span>
+                </div>
             </div>
         </footer>
+        
     </div>
     
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
     <script src="./js/script.js"></script>
 </body>
 </html>
