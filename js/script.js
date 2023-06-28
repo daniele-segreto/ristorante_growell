@@ -61,7 +61,7 @@ function getAssistantResponse(message) {
     // Logica di risposta personalizzata dell'assistente virtuale
     if (message.toLowerCase().includes('ciao')) {
         response = 'Ciao! Come posso aiutarti oggi?';
-    } else if (message.toLowerCase().includes('ordin')) {
+    } else if (message.toLowerCase().includes('ordin') || message.toLowerCase().includes('prenot')) {
         response = 'Accedi alla sezione Menù per ordinare il tuo piatto!';
     } else if (message.toLowerCase().includes('apert')) {
         response = 'Siamo sempre aperti, 24 ore no stop!';
