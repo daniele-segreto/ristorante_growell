@@ -83,3 +83,71 @@ form {
 .fa:hover {
     color: rgb(206, 69, 69) !important;
 }
+
+
+/* CHAT */
+
+.container-chat {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 8px 8px #ccc;
+}
+/* Stile del contenitore principale della chat. Specifica la larghezza massima, il margine esterno e il padding interno */
+
+.chat-window {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Stile della finestra della chat. Imposta il bordo e la bordatura arrotondata */
+
+.chat-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+/* Stile dell'intestazione della chat. Imposta il colore di sfondo, il padding interno e l'allineamento del testo al centro */
+
+.chat-body {
+    padding: 10px;
+    background-color: #ccc;
+}
+/* Stile del corpo della chat. Imposta il padding interno */
+
+.message {
+    margin-bottom: 10px;
+}
+/* Stile di ogni singolo messaggio nella chat. Imposta il margine inferiore per separare i messaggi */
+
+.message-sender {
+    font-weight: bold;
+}
+/* Stile del mittente del messaggio. Imposta il grassetto */
+
+.message-content {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Stile del contenuto del messaggio. Imposta il colore di sfondo, il padding interno e la bordatura arrotondata */
+
+.chat-footer {
+    padding: 10px;
+    display: flex;
+    background-color: #ccc;
+}
+/* Stile del piè di pagina della chat. Imposta il padding interno e il layout flex */
+
+#message-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Stile dell'input del messaggio. Imposta il crescimento flessibile all'interno del layout flex, il padding interno, il bordo e la bordatura arrotondata */
+
+#send-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+/* Stile del pulsante di invio del messaggio. Imposta il margine sinistro, il padding interno */

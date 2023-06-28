@@ -56,9 +56,9 @@
         <!-- Section -->
         <section class="content mt-3">
             <h1 class="text-center">LOGIN</h1>
-
+            
             <hr>
-
+            
             <!-- Form di Login -->
             <form>
                 <div class="mb-3">
@@ -72,10 +72,55 @@
                 <button type="submit" class="btn btn-success">ACCEDI</button>
                 <p class="mt-4">Se non sei regitrato <a class="link-login-register" href="./registrati.html">Iscriviti Adesso</a>.</p>
             </form>
-
+            
             <hr>
-
+            
         </section>
+        
+        <!-- Icona Chat -->
+        <div class="fixed-bottom p-3 d-flex justify-content-end">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                <i class="fa fa-commenting-o fs-4"></i>
+            </button>
+        </div>
+        
+        <!-- Modale -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Chat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-chat bg-success">
+                            <div class="chat-window">
+                                <div class="chat-header">
+                                    <h3>WhatsApp Chat</h3>
+                                </div>
+                                <div class="chat-body">
+                                    <!-- Area in cui vengono visualizzati i messaggi -->
+                                    <div class="message">
+                                        <div class="message-sender">Assistente</div>
+                                        <div class="message-content">Ciao, cosa posso fare per te?</div>
+                                    </div>
+                                    <!-- Aggiungi qui altri messaggi -->
+                                </div>
+                                <div class="chat-footer">
+                                    <!-- Input per digitare il messaggio -->
+                                    <input type="text" id="message-input" placeholder="Type your message">
+                                    <!-- Bottone per inviare il messaggio -->
+                                    <button id="send-button">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!-- Footer -->
         <footer class="footer bg-dark p-3 font-footer">
