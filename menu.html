@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- CloudeFlare -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/stytle.css">
 </head>
@@ -54,375 +56,214 @@
         </header>
         
         
-        <!-- Section / Accordion Item -->
+        <!-- Section -->
         <section class="content mt-3">
             <h1 class="text-center">MENU'</h1>
             
             <hr>
             
-            <div class="accordion" id="accordionPanelsStayOpen">
-                <!-- Antipasti -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            Antipasti
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Antipasto 1</h5>
-                                            <img class="card-img-top" src="./img/antipasti.jpg" alt="antipasti" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione antipasto.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Antipasto 2</h5>
-                                            <img class="card-img-top" src="./img/antipasti.jpg" alt="antipasti" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione antipasto.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Antipasto 3</h5>
-                                            <img class="card-img-top" src="./img/antipasti.jpg" alt="antipasti" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione antipasto.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Antipasto 4</h5>
-                                            <img class="card-img-top" src="./img/antipasti.jpg" alt="antipasti" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione antipasto.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Antipasto 5</h5>
-                                            <img class="card-img-top" src="./img/antipasti.jpg" alt="antipasti" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione antipasto.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Antipasto 6</h5>
-                                            <img class="card-img-top" src="./img/antipasti.jpg" alt="antipasti" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione antipasto.</p>
-                                        </div>
-                                    </div>
-                                </div>
+            <!-- Tabs - Sistema a Schede -->
+            <div id="tabs">
+                <!-- Menù a Schede -->
+                <ul>
+                    <li><a href="#tabs-1">Antipasti</a></li>
+                    <li><a href="#tabs-2">Primi</a></li>
+                    <li><a href="#tabs-3">Secondi</a></li>
+                    <li><a href="#tabs-4">Dessert</a></li>
+                    <li><a href="#tabs-5">Piatti</a></li>
+                </ul>
+                
+                <!-- Cards Antipasti-->
+                <div id="tabs-1">
+                    
+                    <!-- Card Riga 1 -->
+                    <div class="d-flex">
+                        <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
+                            <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Bruschetta</h5>
+                                <p class="card-text">Prezzo: $5.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Bruschetta', 5.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Caprese Salad</h5>
+                                <p class="card-text">Prezzo: $7.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Crostini Misti" data-price="8.99">
+                            <!-- <img class="card-img-top" src="..." alt="Crostini Misti"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Crostini Misti</h5>
+                                <p class="card-text">Prezzo: $9.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Crostini Misti', 9.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Riga 2 -->
+                    <div class="d-flex">
+                        <div class="card m-1" style="width: 18rem;" data-name="Insalata di mare" data-price="12.99">
+                            <!-- <img class="card-img-top" src="..." alt="Insalata di mare"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Insalata di mare</h5>
+                                <p class="card-text">Prezzo: $12.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Insalata di mare', 12.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Carpaccio" data-price="11.50">
+                            <!-- <img class="card-img-top" src="..." alt="Carpaccio"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Carpaccio</h5>
+                                <p class="card-text">Prezzo: $11.50</p>
+                                <button class="btn btn-primary" onclick="addToCart('Carpaccio', 11.50)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Salumi e formaggi" data-price="13.00">
+                            <!-- <img class="card-img-top" src="..." alt="Salumi e formaggi"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Salumi e formaggi</h5>
+                                <p class="card-text">Prezzo: $13.00</p>
+                                <button class="btn btn-primary" onclick="addToCart('Salumi e formaggi', 13.00)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Cards Primi -->
+                <div id="tabs-2">
+                    <!-- Card Riga 1 -->
+                    <div class="d-flex">
+                        <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
+                            <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Bruschetta</h5>
+                                <p class="card-text">Prezzo: $5.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Bruschetta', 5.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Caprese Salad</h5>
+                                <p class="card-text">Prezzo: $7.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Crostini Misti" data-price="8.99">
+                            <!-- <img class="card-img-top" src="..." alt="Crostini Misti"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Crostini Misti</h5>
+                                <p class="card-text">Prezzo: $9.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Crostini Misti', 9.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Riga 2 -->
+                    <div class="d-flex">
+                        <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
+                            <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Bruschetta</h5>
+                                <p class="card-text">Prezzo: $5.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Bruschetta', 5.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Caprese Salad</h5>
+                                <p class="card-text">Prezzo: $7.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
+                            </div>
+                        </div>
+                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Caprese Salad</h5>
+                                <p class="card-text">Prezzo: $7.99</p>
+                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Primi -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            Primi
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Primo 1</h5>
-                                            <img class="card-img-top" src="./img/primi.jpg" alt="primi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione primo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Primo 2</h5>
-                                            <img class="card-img-top" src="./img/primi.jpg" alt="primi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione primo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Primo 3</h5>
-                                            <img class="card-img-top" src="./img/primi.jpg" alt="primi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione primo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Primo 1</h5>
-                                            <img class="card-img-top" src="./img/primi.jpg" alt="primi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione primo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Primo 2</h5>
-                                            <img class="card-img-top" src="./img/primi.jpg" alt="primi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione primo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Primo 3</h5>
-                                            <img class="card-img-top" src="./img/primi.jpg" alt="primi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione primo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis.</p>
                 </div>
-                
-                <!-- Secondi -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                            Secondi
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondo 1</h5>
-                                            <img class="card-img-top" src="./img/secondi.jpg" alt="secondi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione secondo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondo 2</h5>
-                                            <img class="card-img-top" src="./img/secondi.jpg" alt="secondi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione secondo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondo 3</h5>
-                                            <img class="card-img-top" src="./img/secondi.jpg" alt="secondi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione secondo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondo 1</h5>
-                                            <img class="card-img-top" src="./img/secondi.jpg" alt="secondi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione secondo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondo 2</h5>
-                                            <img class="card-img-top" src="./img/secondi.jpg" alt="secondi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione secondo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondo 3</h5>
-                                            <img class="card-img-top" src="./img/secondi.jpg" alt="secondi" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione secondo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="tabs-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                 </div>
-                
-                <!-- Dessert -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                            Dessert
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dessert 1</h5>
-                                            <img class="card-img-top" src="./img/dessert.jpg" alt="dessert" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione dessert 1.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dessert 2</h5>
-                                            <img class="card-img-top" src="./img/dessert.jpg" alt="dessert" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione dessert 2.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dessert 3</h5>
-                                            <img class="card-img-top" src="./img/dessert.jpg" alt="dessert" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione dessert 3.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dessert 1</h5>
-                                            <img class="card-img-top" src="./img/dessert.jpg" alt="dessert" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione dessert 1.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dessert 2</h5>
-                                            <img class="card-img-top" src="./img/dessert.jpg" alt="dessert" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione dessert 2.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dessert 3</h5>
-                                            <img class="card-img-top" src="./img/dessert.jpg" alt="dessert" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione dessert 3.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="tabs-5">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
                 </div>
-                
-                <!-- Bevande -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                            Bevande
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Bevande 1</h5>
-                                            <img class="card-img-top" src="./img/bevande.jpg" alt="bevande" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione bevande 1.</p>
-                                        </div>
-                                    </div>
+            </div>
+            
+            <!-- Icona per Prenotare -->
+            <div class="d-flex justify-content-center mt-3">
+                <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#Modal">
+                    PRENOTA ADESSO
+                    <span class="badge badge-danger rounded-circle cart-badge bg-light text-success ms-2" id="cart-count">0</span>
+                </button>
+            </div>
+            
+            <!-- Modale per Prenotare -->
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="ModalLabel">CARRELLO</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center justify-content-center flex-column">
+                            Sei sicuro di voler prenotare?
+                            <!-- Carrello -->
+                            <ul class="text-center" id="cart">
+                                <b>TOTALE: <span id="total">$0.00</span></b>
+                            </ul>
+
+                            <!-- Calendario con conto alla rovescia -->
+                            <div class="d-flex flex-column ">
+                                <!-- Calendario -->
+                                <div class="d-flex justify-content-center">
+                                    <div id="calendar" style="display: none;" class="mb-3"></div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Bevande 2</h5>
-                                            <img class="card-img-top" src="./img/bevande.jpg" alt="bevande" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione bevande 2.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Bevande 3</h5>
-                                            <img class="card-img-top" src="./img/bevande.jpg" alt="bevande" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione bevande 3.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Bevande 1</h5>
-                                            <img class="card-img-top" src="./img/bevande.jpg" alt="bevande" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione bevande 1.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Bevande 2</h5>
-                                            <img class="card-img-top" src="./img/bevande.jpg" alt="bevande" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione bevande 2.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Bevande 3</h5>
-                                            <img class="card-img-top" src="./img/bevande.jpg" alt="bevande" style="opacity:1.0;" onmouseover="this.style.opacity=0.4;" onmouseout="this.style.opacity=1.0;">
-                                            <p class="card-text">Descrizione bevande 3.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                
+                                <!-- Conto alla rovescia -->
+                                <div id="countdown" class="mb-3 text-center"></div>
+                            </div>
+                            <!-- Annulla / Conferma -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="resetOrder()">Annulla</button>
+                                <button type="button" class="btn btn-success" onclick="confirmOrder()">Conferma</button>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
+            
         </section>
         
         <hr>
         
-        <!-- Icona Chat -->
+        <!-- Icona Chat Bot -->
         <div class="fixed-bottom p-3 d-flex justify-content-end">
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
                 <i class="fa fa-commenting-o fs-4"></i>
             </button>
         </div>
         
-        <!-- Modale -->
-        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modale Chat Bot -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Chat</h5>
+                        <h5 class="modal-title" id="ModalLabel">Chat</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -443,7 +284,7 @@
                                     <!-- Input per digitare il messaggio -->
                                     <input type="text" id="message-input" placeholder="Type your message">
                                     <!-- Bottone per inviare il messaggio -->
-                                    <button id="send-button">Send</button>
+                                    <button id="send-button">Ivia</button>
                                 </div>
                             </div>
                         </div>
@@ -474,9 +315,22 @@
         
     </div>
     
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- jQuery Style -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- Cloudflare, utilizzato per gestire il carrello -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JS -->
-    <script src="./js/script.js"></script>
+    <!-- JS Menù -->
+    <script src="./js/menu.js"></script>
+    <!-- JS Chat Bot -->
+    <script src="./js/chat.js"></script>
 </body>
 </html>
