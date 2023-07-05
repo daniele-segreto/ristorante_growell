@@ -6,6 +6,7 @@
     <title>MENU' - GROWELL</title>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- CloudeFlare -->
@@ -58,193 +59,308 @@
         
         <!-- Section -->
         <section class="content mt-3">
-            <h1 class="text-center">MENU'</h1>
             
-            <hr>
-            
-            <!-- Tabs - Sistema a Schede -->
-            <div id="tabs">
-                <!-- Menù a Schede -->
-                <ul>
-                    <li><a href="#tabs-1">Antipasti</a></li>
-                    <li><a href="#tabs-2">Primi</a></li>
-                    <li><a href="#tabs-3">Secondi</a></li>
-                    <li><a href="#tabs-4">Dessert</a></li>
-                    <li><a href="#tabs-5">Piatti</a></li>
-                </ul>
+            <div class="menu-section-bg">
+                <h1 class="text-center mb-3">MENU'</h1>
                 
-                <!-- Cards Antipasti-->
-                <div id="tabs-1">
+                <!-- Tabs - Sistema a Schede -->
+                <div id="tabs">
+                    <!-- Menù a Schede -->
+                    <ul>
+                        <li><a href="#tabs-1" class="active">Antipasti</a></li>
+                        <li><a href="#tabs-2">Primi</a></li>
+                        <li><a href="#tabs-3">Secondi</a></li>
+                        <li><a href="#tabs-4">Dessert</a></li>
+                        <li><a href="#tabs-5">Piatti</a></li>
+                    </ul>
                     
-                    <!-- Card Riga 1 -->
-                    <div class="d-flex">
-                        <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
-                            <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Bruschetta</h5>
-                                <p class="card-text">Prezzo: $5.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Bruschetta', 5.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
-                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Caprese Salad</h5>
-                                <p class="card-text">Prezzo: $7.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Crostini Misti" data-price="8.99">
-                            <!-- <img class="card-img-top" src="..." alt="Crostini Misti"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Crostini Misti</h5>
-                                <p class="card-text">Prezzo: $9.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Crostini Misti', 9.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card Riga 2 -->
-                    <div class="d-flex">
-                        <div class="card m-1" style="width: 18rem;" data-name="Insalata di mare" data-price="12.99">
-                            <!-- <img class="card-img-top" src="..." alt="Insalata di mare"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Insalata di mare</h5>
-                                <p class="card-text">Prezzo: $12.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Insalata di mare', 12.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Carpaccio" data-price="11.50">
-                            <!-- <img class="card-img-top" src="..." alt="Carpaccio"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Carpaccio</h5>
-                                <p class="card-text">Prezzo: $11.50</p>
-                                <button class="btn btn-primary" onclick="addToCart('Carpaccio', 11.50)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Salumi e formaggi" data-price="13.00">
-                            <!-- <img class="card-img-top" src="..." alt="Salumi e formaggi"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Salumi e formaggi</h5>
-                                <p class="card-text">Prezzo: $13.00</p>
-                                <button class="btn btn-primary" onclick="addToCart('Salumi e formaggi', 13.00)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <!-- Cards Primi -->
-                <div id="tabs-2">
-                    <!-- Card Riga 1 -->
-                    <div class="d-flex">
-                        <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
-                            <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Bruschetta</h5>
-                                <p class="card-text">Prezzo: $5.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Bruschetta', 5.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
-                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Caprese Salad</h5>
-                                <p class="card-text">Prezzo: $7.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Crostini Misti" data-price="8.99">
-                            <!-- <img class="card-img-top" src="..." alt="Crostini Misti"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Crostini Misti</h5>
-                                <p class="card-text">Prezzo: $9.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Crostini Misti', 9.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card Riga 2 -->
-                    <div class="d-flex">
-                        <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
-                            <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Bruschetta</h5>
-                                <p class="card-text">Prezzo: $5.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Bruschetta', 5.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
-                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Caprese Salad</h5>
-                                <p class="card-text">Prezzo: $7.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                        <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
-                            <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Caprese Salad</h5>
-                                <p class="card-text">Prezzo: $7.99</p>
-                                <button class="btn btn-primary" onclick="addToCart('Caprese Salad', 7.99)">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tabs-3">
-                    <p>Mauris eleifend est et turpis.</p>
-                </div>
-                <div id="tabs-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-                <div id="tabs-5">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            
-            <!-- Icona per Prenotare -->
-            <div class="d-flex justify-content-center mt-3">
-                <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#Modal">
-                    PRENOTA ADESSO
-                    <span class="badge badge-danger rounded-circle cart-badge bg-light text-success ms-2" id="cart-count">0</span>
-                </button>
-            </div>
-            
-            <!-- Modale per Prenotare -->
-            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="ModalLabel">CARRELLO</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center justify-content-center flex-column">
-                            Sei sicuro di voler prenotare?
-                            <!-- Carrello -->
-                            <ul class="text-center" id="cart">
-                                <b>TOTALE: <span id="total">$0.00</span></b>
-                            </ul>
-
-                            <!-- Calendario con conto alla rovescia -->
-                            <div class="d-flex flex-column ">
-                                <!-- Calendario -->
-                                <div class="d-flex justify-content-center">
-                                    <div id="calendar" style="display: none;" class="mb-3"></div>
+                    <!-- Cards Antipasti-->
+                    <div id="tabs-1">
+                        
+                        <!-- Card Riga 1 -->
+                        <div class="d-flex flex-row">
+                            <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
+                                <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Bruschetta</h5>
+                                    <p class="card-text">Prezzo: $5.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Bruschetta', 5.99)">Ordina</button>
                                 </div>
-                                
-                                <!-- Conto alla rovescia -->
-                                <div id="countdown" class="mb-3 text-center"></div>
                             </div>
-                            <!-- Annulla / Conferma -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="resetOrder()">Annulla</button>
-                                <button type="button" class="btn btn-success" onclick="confirmOrder()">Conferma</button>
+                            <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                                <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Caprese Salad</h5>
+                                    <p class="card-text">Prezzo: $7.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Caprese Salad', 7.99)">Ordina</button>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 18rem;" data-name="Crostini Misti" data-price="8.99">
+                                <!-- <img class="card-img-top" src="..." alt="Crostini Misti"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Crostini Misti</h5>
+                                    <p class="card-text">Prezzo: $9.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Crostini Misti', 9.99)">Ordina</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Riga 2 -->
+                        <div class="d-flex">
+                            <div class="card m-1" style="width: 18rem;" data-name="Insalata di mare" data-price="12.99">
+                                <!-- <img class="card-img-top" src="..." alt="Insalata di mare"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Insalata di mare</h5>
+                                    <p class="card-text">Prezzo: $12.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Insalata di mare', 12.99)">Ordina</button>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 18rem;" data-name="Carpaccio" data-price="11.50">
+                                <!-- <img class="card-img-top" src="..." alt="Carpaccio"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Carpaccio</h5>
+                                    <p class="card-text">Prezzo: $11.50</p>
+                                    <button class="btn btn-success" onclick="addToCart('Carpaccio', 11.50)">Ordina</button>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 18rem;" data-name="Salumi e formaggi" data-price="13.00">
+                                <!-- <img class="card-img-top" src="..." alt="Salumi e formaggi"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Salumi e formaggi</h5>
+                                    <p class="card-text">Prezzo: $13.00</p>
+                                    <button class="btn btn-success" onclick="addToCart('Salumi e formaggi', 13.00)">Ordina</button>
+                                </div>
                             </div>
                         </div>
                         
                     </div>
+                    
+                    <!-- Cards Primi -->
+                    <div id="tabs-2">
+                        <!-- Card Riga 1 -->
+                        <div class="d-flex">
+                            <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
+                                <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Bruschetta</h5>
+                                    <p class="card-text">Prezzo: $5.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Bruschetta', 5.99)">Ordina</button>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                                <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Caprese Salad</h5>
+                                    <p class="card-text">Prezzo: $7.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Caprese Salad', 7.99)">Ordina</button>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 18rem;" data-name="Crostini Misti" data-price="8.99">
+                                <!-- <img class="card-img-top" src="..." alt="Crostini Misti"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Crostini Misti</h5>
+                                    <p class="card-text">Prezzo: $9.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Crostini Misti', 9.99)">Ordina</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card Riga 2 -->
+                        <div class="d-flex">
+                            <div class="card m-1" style="width: 18rem;" data-name="Bruschetta" data-price="5.99">
+                                <!-- <img class="card-img-top" src="..." alt="bruschetta"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Bruschetta</h5>
+                                    <p class="card-text">Prezzo: $5.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Bruschetta', 5.99)">Ordina</button>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                                <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Caprese Salad</h5>
+                                    <p class="card-text">Prezzo: $7.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Caprese Salad', 7.99)">Ordina</button>
+                                </div>
+                            </div>
+                            <div class="card m-1" style="width: 18rem;" data-name="Caprese Salad" data-price="7.99">
+                                <!-- <img class="card-img-top" src="..." alt="Crapese Salad"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Caprese Salad</h5>
+                                    <p class="card-text">Prezzo: $7.99</p>
+                                    <button class="btn btn-success" onclick="addToCart('Caprese Salad', 7.99)">Ordina</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-3">
+                        <p>Mauris eleifend est et turpis.</p>
+                    </div>
+                    <div id="tabs-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div id="tabs-5">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                    </div>
                 </div>
+                
+                <!-- Icona per Prenotare -->
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-success w-100 position-relative" data-bs-toggle="modal" data-bs-target="#Modal">
+                        PRENOTA ADESSO
+                        <!-- Badge -->
+                        <span class="badge badge-danger rounded-circle cart-badge bg-light text-success ms-2" id="cart-count">
+                            0
+                        </span>
+                        <!-- Icona del Carrello -->
+                        <span><i class="fas fa-shopping-cart ms-1"></i></span>
+                    </button>
+                </div>
+                
+                <!-- Modale per Prenotare -->
+                <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="ModalLabel">CARRELLO</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center justify-content-center flex-column">
+                                Sei sicuro di voler prenotare?
+                                <!-- Carrello -->
+                                <ul class="text-center" id="cart">
+                                    <b>TOTALE: <span id="total">$0.00</span></b>
+                                </ul>
+                                
+                                <!-- Calendario con conto alla rovescia -->
+                                <div class="d-flex flex-column ">
+                                    <!-- Calendario -->
+                                    <div class="d-flex justify-content-center">
+                                        <div id="calendar" style="display: none;" class="mb-3"></div>
+                                    </div>
+                                    
+                                    <!-- Conto alla rovescia -->
+                                    <div id="countdown" class="mb-3 text-center"></div>
+                                </div>
+                                <!-- Annulla / Conferma -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="resetOrder()">Annulla</button>
+                                    <button type="button" class="btn btn-success" onclick="confirmOrder()">Conferma</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <h1 class="text-center">RECENSIONI</h1>
+                
+                <!-- Carosello Recensioni -->
+                <div id="carouselIndicators" class="carousel slide my-4 bg-light border border-2 carosello-recensioni" data-bs-ride="carousel">
+                    <!-- <ol class="carousel-indicators d-flex justify-content-center">
+                        <li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+                    </ol> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>Ottimo!</h2>
+                                        <p>Professionalità da parte del proprietario e del personale.</p>
+                                        <div class="rating">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>Consiglio a tutti!</h2>
+                                        <p>Personale attento a chi ha problemi di intolleranza.</p>
+                                        <div class="rating">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>Qualità!</h2>
+                                        <p>Ottimo cibo, personale qualificato e molto preparato.</p>
+                                        <div class="rating">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+                
+                
+                <hr>
+                
+                <!-- Carosello -->
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active bg-light" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="bg-light"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="bg-light"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./img/primi.jpg" class="d-block w-100" alt="primi" style="height: 400px;">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./img/margherita.jpg" class="d-block w-100" alt="margherita" style="height: 400px;">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/dessert.jpg" class="d-block w-100" alt="dessert" style="height: 400px;">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
             </div>
             
         </section>
@@ -297,18 +413,25 @@
         </div>
         
         <!-- Footer -->
-        <footer class="footer bg-dark p-3 font-footer">
+        <footer class="footer bg-dark p-3">
             <div class="container text-center">
+                <!-- Pagine Principali Sul Footer -->
+                <div class="d-flex justify-content-center mb-2">
+                    <a href="./index.html" class="text-light mx-1 font-footer nav-link px-3 py-1">HOME</a>
+                    <a href="./menu.html" class="text-light mx-1 font-footer nav-link px-3 py-1">MENU'</a>
+                    <a href="./contatti.html" class="text-light mx-1 font-footer nav-link px-3 py-1">CONTATTI</a>
+                </div>
                 <!-- Icone Social -->
-                <div>
+                <div class="mb-1">
                     <a target="_blank" href="https://it-it.facebook.com/" class="fa fa-facebook text-light"></a>
                     <a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram text-light"></a>
                 </div>
                 <!-- Info -->
                 <div class="d-flex justify-content-center flex-column">
-                    <span class="text-light mt-1">Indirizzo: Via esempio, Città, CAP</span>
-                    <span class="text-light mt-1 ">Telefono: 0123456789</span>
-                    <span class="text-light mt-1 ">Partita IVA: 123456789</span>
+                    <!-- Info Footer -->
+                    <span class="text-light mt-1 font-footer">Indirizzo: Via esempio, Città, CAP</span>
+                    <span class="text-light mt-1 font-footer">Telefono: 0123456789</span>
+                    <span class="text-light mt-1 font-footer">Partita IVA: 123456789</span>
                 </div>
             </div>
         </footer>

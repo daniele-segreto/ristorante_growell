@@ -23,6 +23,7 @@ body {
 /* Caratteristiche del testo del Footer */
 .font-footer {
     font-size: small;
+    text-decoration: none;
 }
 
 /* Cart */
@@ -37,7 +38,6 @@ body {
 }
 
 /* Font degli h2, cioè i titol che rappresentano le sezioni del menù */
-
 h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -54,8 +54,35 @@ h3 {
     color: white; /* Cambia il colore dell'icona */
 }
 
+/* POTREBBE ESSERE UGUALE PER TUTTI MA HO PREFERITO CREARNE DIVERSE,
+ APPUNTO PER AVERE FLESSIBILITA' IN CASO DI CAMBIAMENTI ISTANTANEI: */
+
 /* Sezione centrale della Home */
 .home-section-bg {
+    background-color: white;
+    padding: 35px;
+    border: 1px solid black;
+}
+/* Sezione centrale della pagina Menù */
+.menu-section-bg {
+    background-color: white;
+    padding: 35px;
+    border: 1px solid black;
+}
+/* Sezione Centrale della pagina Contatti */
+.contatti-section-bg {
+    background-color: white;
+    padding: 35px;
+    border: 1px solid black;
+}
+/* Sezione Centrale della pagina Registrati */
+.registrati-section-bg {
+    background-color: white;
+    padding: 35px;
+    border: 1px solid black;
+}
+/* Sezione Centrale della pagina Login */
+.login-section-bg {
     background-color: white;
     padding: 35px;
     border: 1px solid black;
@@ -81,6 +108,31 @@ form {
 }
 .fa:hover {
     color: rgb(206, 69, 69) !important;
+}
+
+
+/* Sistema a Schede del Menù */
+#tabs ul li a {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+#tabs ul li a.active {
+    background-color: #157347;
+    color: whitesmoke;
+}
+
+
+/* Carosello Recensioni */
+.carosello-recensioni {
+    padding: 90px;
+}
+
+/* Frecce del Carosello */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
 }
 
 

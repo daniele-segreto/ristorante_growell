@@ -3,6 +3,19 @@ $( function() {
     $( "#tabs" ).tabs();
 });
 
+// Cambia il colore del pulsante nel sistema a schede
+$(document).ready(function() {
+    // Aggiungi l'evento di click alle schede
+    $("#tabs ul li a").click(function() {
+        // Rimuovi la classe 'active' da tutte le schede
+        $("#tabs ul li a").removeClass("active");
+        
+        // Aggiungi la classe 'active' alla scheda cliccata
+        $(this).addClass("active");
+    });
+});
+
+
 // MENU'
 function addToCart(name, price) {
     // Aggiungi il piatto al carrello
@@ -24,13 +37,13 @@ function addToCart(name, price) {
 
 // Resetta Ordine
 function resetOrder() {
-        // Resetta il carrello e il prezzo totale
-        const cart = document.getElementById("cart");
-        cart.innerHTML = "";
-        const cartCount = document.getElementById("cart-count");
-        cartCount.textContent = "0";
-        const total = document.getElementById("total");
-        total.textContent = "$0.00";
+    // Resetta il carrello e il prezzo totale
+    const cart = document.getElementById("cart");
+    cart.innerHTML = "";
+    const cartCount = document.getElementById("cart-count");
+    cartCount.textContent = "0";
+    const total = document.getElementById("total");
+    total.textContent = "$0.00";
 }
 
 // Conferma Ordine

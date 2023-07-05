@@ -55,38 +55,40 @@
         
         <!-- Section -->
         <section class="content mt-3">
-            <h1 class="text-center">REGISTRATI</h1>
             
-            <hr>
+            <div class="registrati-section-bg">
+                <h1 class="text-center mb-2">REGISTRATI</h1>
+                
+                <!-- Form di Registrazione -->
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control" placeholder="Marco">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Cognome</label>
+                        <input type="text" class="form-control" placeholder="Rossi">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="mariorossi@libero.it">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="**********">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Conferma Password</label>
+                        <input type="password" class="form-control" placeholder="**********">
+                    </div>
+                    <button type="submit" class="btn btn-success">REGISTRATI</button>
+                    <p class="mt-4">Se già un utente registrato, accedi subito tramite <a class="link-login-register" href="./login.html">Login</a>.</p>
+                </form>
+            </div>
             
-            <!-- Form di Registrazione -->
-            <form>
-                <div class="mb-3">
-                    <label class="form-label">Nome</label>
-                    <input type="text" class="form-control" placeholder="Marco">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Cognome</label>
-                    <input type="text" class="form-control" placeholder="Rossi">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="mariorossi@libero.it">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control" placeholder="**********">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Conferma Password</label>
-                    <input type="password" class="form-control" placeholder="**********">
-                </div>
-                <button type="submit" class="btn btn-success">REGISTRATI</button>
-                <p class="mt-4">Se già un utente registrato, accedi subito tramite <a class="link-login-register" href="./login.html">Login</a>.</p>
-            </form>
-            
-            <hr>
         </section>
+        
+        <hr>
         
         <!-- Icona Chat -->
         <div class="fixed-bottom p-3 d-flex justify-content-end">
@@ -134,18 +136,25 @@
         </div>
         
         <!-- Footer -->
-        <footer class="footer bg-dark p-3 font-footer">
+        <footer class="footer bg-dark p-3">
             <div class="container text-center">
+                <!-- Pagine Principali Sul Footer -->
+                <div class="d-flex justify-content-center mb-2">
+                    <a href="./index.html" class="text-light mx-1 font-footer nav-link px-3 py-1">HOME</a>
+                    <a href="./menu.html" class="text-light mx-1 font-footer nav-link px-3 py-1">MENU'</a>
+                    <a href="./contatti.html" class="text-light mx-1 font-footer nav-link px-3 py-1">CONTATTI</a>
+                </div>
                 <!-- Icone Social -->
-                <div>
+                <div class="mb-1">
                     <a target="_blank" href="https://it-it.facebook.com/" class="fa fa-facebook text-light"></a>
                     <a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram text-light"></a>
                 </div>
                 <!-- Info -->
                 <div class="d-flex justify-content-center flex-column">
-                    <span class="text-light mt-1">Indirizzo: Via esempio, Città, CAP</span>
-                    <span class="text-light mt-1 ">Telefono: 0123456789</span>
-                    <span class="text-light mt-1 ">Partita IVA: 123456789</span>
+                    <!-- Info Footer -->
+                    <span class="text-light mt-1 font-footer">Indirizzo: Via esempio, Città, CAP</span>
+                    <span class="text-light mt-1 font-footer">Telefono: 0123456789</span>
+                    <span class="text-light mt-1 font-footer">Partita IVA: 123456789</span>
                 </div>
             </div>
         </footer>

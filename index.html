@@ -55,15 +55,14 @@
         
         <!-- Section -->
         <section class="content mt-3">
-            <h1 class="text-center">HOME</h1>
-            
-            <hr>
             
             <div class="home-section-bg">
-                <h3 class="fs-4">Benvenuti al Ristorante Growell!</h3>
-                <p>Un'esperienza culinaria indimenticabile ti attende al nostro ristorante, dove l'eccellenza culinaria e l'ospitalità si uniscono per creare un ambiente unico e accogliente. Siamo lieti di darti il benvenuto nella nostra casa, dove ogni piatto è realizzato con passione e cura per offrirti un vero e proprio viaggio dei sensi.</p>
+                <h1 class="text-center">GROWELL</h1>
                 
                 <hr>
+
+                <h3 class="fs-4">Benvenuti al Ristorante Growell!</h3>
+                <p>Un'esperienza culinaria indimenticabile ti attende al nostro ristorante, dove l'eccellenza culinaria e l'ospitalità si uniscono per creare un ambiente unico e accogliente. Siamo lieti di darti il benvenuto nella nostra casa, dove ogni piatto è realizzato con passione e cura per offrirti un vero e proprio viaggio dei sensi.</p>
                 
                 <h3 class="fs-4 mt-4">Il nostro Menu:</h3>
                 <p>Scopri un'ampia selezione di piatti deliziosi, creati con ingredienti freschi e di alta qualità, accuratamente selezionati per garantirti un sapore autentico. Dalle specialità della cucina italiana tradizionale a piatti internazionali con un tocco moderno, il nostro menu soddisferà ogni palato e ogni desiderio culinario. I nostri chef esperti lavorano con maestria per offrirti una fusione perfetta di sapori, presentati in modo artistico per soddisfare anche gli occhi.</p>
@@ -104,14 +103,14 @@
             
         </section>
         
-        <!-- Icona Chat -->
+        <!-- Icona Chat Bot -->
         <div class="fixed-bottom p-3 d-flex justify-content-end">
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
                 <i class="fa fa-commenting-o fs-4"></i>
             </button>
         </div>
         
-        <!-- Modale -->
+        <!-- Modale Chat Bot -->
         <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -150,18 +149,25 @@
         </div>
         
         <!-- Footer -->
-        <footer class="footer bg-dark p-3 font-footer">
+        <footer class="footer bg-dark p-3">
             <div class="container text-center">
+                <!-- Pagine Principali Sul Footer -->
+                <div class="d-flex justify-content-center mb-2">
+                    <a href="./index.html" class="text-light mx-1 font-footer nav-link px-3 py-1">HOME</a>
+                    <a href="./menu.html" class="text-light mx-1 font-footer nav-link px-3 py-1">MENU'</a>
+                    <a href="./contatti.html" class="text-light mx-1 font-footer nav-link px-3 py-1">CONTATTI</a>
+                </div>
                 <!-- Icone Social -->
-                <div>
+                <div class="mb-1">
                     <a target="_blank" href="https://it-it.facebook.com/" class="fa fa-facebook text-light"></a>
                     <a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram text-light"></a>
                 </div>
                 <!-- Info -->
                 <div class="d-flex justify-content-center flex-column">
-                    <span class="text-light mt-1">Indirizzo: Via esempio, Città, CAP</span>
-                    <span class="text-light mt-1 ">Telefono: 0123456789</span>
-                    <span class="text-light mt-1 ">Partita IVA: 123456789</span>
+                    <!-- Info Footer -->
+                    <span class="text-light mt-1 font-footer">Indirizzo: Via esempio, Città, CAP</span>
+                    <span class="text-light mt-1 font-footer">Telefono: 0123456789</span>
+                    <span class="text-light mt-1 font-footer">Partita IVA: 123456789</span>
                 </div>
             </div>
         </footer>
