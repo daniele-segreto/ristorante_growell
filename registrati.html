@@ -60,26 +60,26 @@
                 <h1 class="text-center mb-2">REGISTRATI</h1>
                 
                 <!-- Form di Registrazione -->
-                <form>
+                <form id="registrazioneForm" onsubmit="registra(event)">
                     <div class="mb-3">
                         <label class="form-label">Nome</label>
-                        <input type="text" class="form-control" placeholder="Marco">
+                        <input type="text" id="nome" class="form-control" placeholder="Marco">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Cognome</label>
-                        <input type="text" class="form-control" placeholder="Rossi">
+                        <input type="text" id="cognome" class="form-control" placeholder="Rossi">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="mariorossi@libero.it">
+                        <input type="email" id="email" class="form-control" placeholder="mariorossi@libero.it">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Password</label>
-                        <input type="password" class="form-control" placeholder="**********">
+                        <input type="password" id="password" class="form-control" placeholder="**********">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Conferma Password</label>
-                        <input type="password" class="form-control" placeholder="**********">
+                        <input type="password" id="confermaPassword" class="form-control" placeholder="**********">
                     </div>
                     <button type="submit" class="btn btn-success">REGISTRATI</button>
                     <p class="mt-4">Se già un utente registrato, accedi subito tramite <a class="link-login-register" href="./login.html">Login</a>.</p>
@@ -165,5 +165,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JS Chat Bot -->
     <script src="./js/chat.js"></script>
+    <!-- JS Autenticazione -->
+    <script src="./js/auth.js"></script>
 </body>
 </html>
