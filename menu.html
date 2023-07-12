@@ -43,16 +43,29 @@
                             <li class="nav-item">
                                 <a class="nav-link active text-light" href="./contatti.html">Contatti</a>
                             </li>
-                            <li class="nav-item">
+                            
+                            <!-- Menu a tendina -->
+                            <li class="nav-item dropdown d-none" id="userDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user fs-5 m-0"></i> <span id="userName"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Registrati e Login -->
+                            <li class="nav-item d-none" id="registratiNav">
                                 <a class="nav-link active text-light" href="./registrati.html">Registrati</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none" id="loginNav">
                                 <a class="nav-link active text-light" href="./login.html">Login</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            
             
         </header>
         
@@ -455,5 +468,8 @@
     <script src="./js/menu.js"></script>
     <!-- JS Chat Bot -->
     <script src="./js/chat.js"></script>
+    <!-- JS Accesso -->
+    <script src="./js/navbar.js"></script>
+    <script src="./js/auth.js"></script>
 </body>
 </html>

@@ -22,6 +22,22 @@
                 <img src="./img/growell.jpg" class="img-fluid border border-5 border-dark" alt="growell">
             </banner>
             
+            <!-- Protegge La rotta della pagina Registrati -->
+            <script>
+                // Controllo di accesso
+                function checkAccess() {
+                    // Controlla lo stato di accesso dell'utente
+                    var accesso = localStorage.getItem("accesso");
+                    if (accesso === "true") {
+                        // L'utente è già loggato, reindirizza all'homepage o alla dashboard
+                        window.location.href = "./index.html"; // Modifica l'URL di reindirizzamento desiderato
+                    }
+                }
+                
+                // Esegui il controllo di accesso all'avvio della pagina
+                checkAccess();
+            </script>
+            
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark mt-1" id="menu-anchor">
                 <div class="container-fluid">
@@ -40,10 +56,22 @@
                             <li class="nav-item">
                                 <a class="nav-link active text-light" href="./contatti.html">Contatti</a>
                             </li>
-                            <li class="nav-item">
+                            
+                            <!-- Menu a tendina -->
+                            <li class="nav-item dropdown d-none" id="userDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user fs-5 m-0"></i> <span id="userName"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Registrati e Login -->
+                            <li class="nav-item d-none" id="registratiNav">
                                 <a class="nav-link active text-light" href="./registrati.html">Registrati</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none" id="loginNav">
                                 <a class="nav-link active text-light" href="./login.html">Login</a>
                             </li>
                         </ul>
@@ -165,7 +193,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JS Chat Bot -->
     <script src="./js/chat.js"></script>
-    <!-- JS Autenticazione -->
+    <!-- JS Accesso -->
     <script src="./js/auth.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>

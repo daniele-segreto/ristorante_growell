@@ -15,7 +15,7 @@ function registra(event) {
         nome: nome,
         cognome: cognome,
         email: email,
-        password: password // Aggiungi il campo "password"
+        password: password
     };
     
     // Salva l'utente nel localStorage
@@ -59,8 +59,8 @@ document.getElementById("loginForm").addEventListener("submit", accedi);
 let accesso = localStorage.getItem("accesso");
 
 if (accesso === "true") {
-    // Mostra il contenuto della dashboard o della pagina successiva
+    // L'utente è loggato, mostra il contenuto della dashboard o della pagina successiva
 } else {
-    // Reindirizza l'utente alla pagina di login
+    // L'utente non è loggato, reindirizza l'utente alla pagina di login
     window.location.href = "./login.html";
 }
